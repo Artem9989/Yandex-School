@@ -1,0 +1,294 @@
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+  }
+p{ 
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+.container {
+    max-width: 668px;
+    max-height: 376px;
+    width: 668px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.title {
+    color: #FCFBF7;
+    width: 564px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 20px 52px 8px 52px ;
+}
+.sprint-number{
+    color: #918F8A;
+    font-family: Roboto;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.developer{
+    width: 624px;
+    height: 290px;
+    margin: 3px 32px 5px 32px;
+    display: grid;
+    grid-template-areas: "card-1 card-2 card-btn1 card-4 card-6"  
+                        "card-1 card-3 card-btn2 card-5 card-6";
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.developer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.developer-card_position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 104px;
+    height: 142px;
+}
+.developer-card_position:hover{
+    border-radius: 6px;
+    background: radial-gradient(circle at 50% 50%, #443A2A 0%, #000000 100%);
+    box-shadow: inset 2px 2px 16px 0px #FFFFFF,inset -1px 1px 1px 0px #FFFFFF;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.developer-card_active{
+    border-radius: 6px;
+    background: radial-gradient(circle at 50% 50%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset 0px 6px 15px 0px #FFA200,inset -1px 1px 1px 0px #FFFFFF;
+}
+.developer-card-emoji {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    z-index: 10;
+}
+.btn_position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+
+.developer-card-name{
+    color: #FCFBF7;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 6px;
+    
+}
+.btn-up{
+    grid-area: card-btn1;
+    background: url(./assets/btn-up_dark.png) no-repeat;
+    
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 37%;
+    left: 24%;
+}
+.btn-down{
+    
+    grid-area: card-btn2;
+    background: url(./assets/btn-down_dark.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    position: relative;
+
+    top: 20%;
+    left: 24%;
+   
+}
+.card-two {
+
+    grid-area: card-2;
+}
+.card-one{
+    grid-area: card-1;
+}
+.card-three{
+    grid-area: card-3;
+}
+.card-four{
+    grid-area: card-4;
+}
+.card-five{
+    grid-area: card-5;
+}
+.card-six{
+    grid-area: card-6;
+}
+.card-seven{
+    grid-area: card-7;
+}
+.card-eight{
+    grid-area: card-8;
+}
+
+.developer-card-avatar{
+    border-radius: 100px;
+}
+
+.theme_light{
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+.theme_light .title{
+    color: #261C00;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+}
+.theme_light .sprint-number{
+    color: #BFBFBF;
+    font-family: Roboto;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+
+}
+.theme_light .developer-card-name{
+    color: #261C00;
+    font-family: Roboto;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.theme_light .developer-card_position:hover{
+    border-radius: 6px;
+    background: linear-gradient(-180deg, #F4F4F4 1%, #E9E9E9 100%, #EAEAEA 100%);
+    box-shadow: inset 0px 0px 20px 0px #CFCFCF,inset -1px 1px 1px 0px #FFFFFF;
+}
+.theme_light .developer-card_active{
+    border-radius: 6px;
+    background: linear-gradient(-180deg, #FFF2D1 1%, #FFD66C 100%);
+    box-shadow: inset 0px 0px 20px 0px #FFB039,inset -1px 1px 1px 0px #FFFFFF;
+}
+.theme_light .btn-down{
+    background: url(./assets/btn-down_light.png)no-repeat;
+}
+.theme_light .btn-up {
+    background: url(./assets/btn-up_light.png) no-repeat;
+}
+/* темная тема */
+.theme_dark {
+    background: radial-gradient(circle at 50% 50%, #130E00 0%, #000000 100%);
+    color: #FCFBF7;
+}
+.theme_dark p {
+    color: #FCFBF7;
+}
+.theme_dark .sprint-number{
+    color: #918F8A;
+}
+
+/* .theme_dark .people-card-commit {
+    color: #918F8A;
+}
+.theme_dark .people-card-top{
+    background: radial-gradient(circle at 50% 50%, #000000 0%, #231900 0%, #4D4D4D 100%),linear-gradient(180deg, #000000 0%, #000000 100%);
+    box-shadow: inset 2px 2px 16px 0px #676767,inset -1px 1px 1px 0px #FFFFFF
+}
+.theme_dark .people-card-top_one{
+    background: radial-gradient(circle at 50% 50%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset 0px 6px 15px 0px #FFA200,inset -1px 1px 1px 0px #FFFFFF;
+} */
+.theme_dark .developer-card-avatar {
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 376px) {
+  
+    .container {
+        max-width: 375px;
+        max-height: 667px;
+        display: block;
+
+}
+    /* .developer-card-avatar{
+        margin: 20px 20px 20px 20px;
+    } */
+    .title {    
+        width: 300px;
+        margin: 20px 52px 8px 24px ;
+        text-align: start;
+        
+    }
+    .sprint-number{
+        text-align: start;
+        margin: 8px 0px 25px 24px;
+    }
+    .developer{
+        width: 328px;
+        max-width: 328px;
+        height: 501px;
+        margin: 25px 24px 23px 24px;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-areas:"card-1 card-btn1 card-2"
+                            "card-1 card-4 card-2"
+                            "card-3 card-4 card-5"
+                            "card-3 card-7 card-5"
+                            "card-6 card-7 card-8"
+                            "card-6 card-btn2 card-8";
+
+        grid-template-columns: repeat(3, 111px);
+        grid-template-rows: repeat(6, 85px);
+    
+    }
+    .developer-card{
+        width: 104px;
+        height: 142px;
+
+    }
+    .btn-up{
+        top:-2px;
+        left: -3px;
+        margin: 0 auto;
+    }
+    .btn-down{
+        top: -10px;
+        left: -3px;
+        margin: 0 auto;
+    }
+}

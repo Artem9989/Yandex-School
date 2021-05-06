@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+  }
+p{ 
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+.container {
+    max-width: 668px;
+    max-height: 376px;
+    width: 668px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    color: #261C00;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 20px 0 8px 0 ;
+}
+.sprint-number{
+  
+    color: #BFBFBF;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.developer-card{
+    width: 104px;
+    height: 298px;
+
+    display: flex;
+    flex-direction: column;
+}
+.developer{
+    width: 536px;
+    /* удалить потом */
+    display: flex;
+    align-items: center;
+
+}
+.developer-card-emoji {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    z-index: 10;
+}
+.developer-card-img{
+    border-radius: 100px;
+
+}
+.developer-card-top-place{
+    color: #261C00;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 18px;
+}
+.developer-card-commit{
+    color: #BFBFBF;
+    line-height: 16px;
+    font-weight: regular;
+    margin-top: 4px;
+}
+
+ .developer-card-name {
+    color: #261C00;
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.developer-card-lastName{
+    margin-top: 0px;
+}
+
+.developer-card-top{
+    /* background: url(./assets/RectangleOne.png); */
+    width: 120px;
+    background: linear-gradient(-180deg, #F4F4F4 1%, #E9E9E9 100%, #EAEAEA 100%);
+    box-shadow: inset 0px 0px 20px 0px #CFCFCF,inset -1px 1px 1px 0px #FFFFFF;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+
+}
+.developer-card-top_one{
+    /* background: url(./assets/RectangleOne.png); */
+    width: 120px;
+    height: 108px;
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.8);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+   
+}
+.developer-card_one{
+    z-index: 10;
+    margin: 0 0px;
+}
+.developer-card-top_two, .developer-card-top_three{
+    height: 88px;
+}
+
+.developer-card-top_four, .developer-card-top_five{
+    height: 68px;
+}
+.developer-card-top_four, .developer-card-top_two{ 
+    padding-left: 16px;
+}
+.developer-card_three, .developer-card_five, .developer-card-top_three, .developer-card-top_five {
+    padding-right: 16px;
+}
+
+.developer-card-info-right{
+    padding-left: 16px;
+}
+
+.developer-card_four{
+    z-index: -1;
+}
+
+.developer-card-info{
+    margin: auto 0px 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0px 16px; */
+
+}
+/* темная тема */
+.theme_dark {
+    background: radial-gradient(circle at 50% 50%, #130E00 0%, #000000 100%);
+    color: #FCFBF7;
+}
+.theme_dark p {
+    color: #FCFBF7;
+}
+.theme_dark .sprint-number{
+    color: #918F8A;
+}
+
+.theme_dark .developer-card-commit {
+    color: #918F8A;
+}
+.theme_dark .developer-card-top{
+    background: radial-gradient(circle at 50% 50%, #000000 0%, #231900 0%, #4D4D4D 100%),linear-gradient(180deg, #000000 0%, #000000 100%);
+    box-shadow: inset 2px 2px 16px 0px #676767,inset -1px 1px 1px 0px #FFFFFF
+}
+.theme_dark .developer-card-top_one{
+    background: radial-gradient(circle at 50% 50%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset 0px 6px 15px 0px #FFA200,inset -1px 1px 1px 0px #FFFFFF;
+}
+.theme_dark .developer-card-img {
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 376px) {
+  
+    .container {
+        max-width: 376px;
+        max-height: 668px;
+        width: 376px;
+        display: block;
+
+}
+    
+    .title {    
+        margin: 20px 52px 8px 24px ;
+        
+    }
+    .sprint-number{
+        text-align: start;
+        margin: 8px 0px 59px 24px;
+    }
+    .developer-card{
+        width: 104px;
+        height: 499px;
+    }
+    .developer{
+        width: 357px;
+        /* удалить потом */
+        justify-content: center;
+    }
+
+    .developer-card-top-place{
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .developer-card-commit{
+        margin-bottom: 16px;
+    }
+    
+    .developer-card-lastName  {
+        color: #261C00;
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 16px;
+        
+    }
+
+    
+    .developer-card-top{
+        /* background: url(./assets/RectangleOne.png); */
+        width: 120px;
+        margin-top: 0px;
+        
+    
+    }
+    .developer-card-top_one{
+        /* background: url(./assets/RectangleOne.png); */
+        width: 120px;
+        height: 325px;
+    }
+    
+    .developer-card-top_two {
+        height: 275px;
+    }
+    
+    .developer-card-top_three{
+        height: 225px;
+    }
+    
+    .developer-card-info-top-one_margin {
+        margin: auto 8px 0 8px;
+        width: 104px;
+    }
+    
+    
+    
+ }
